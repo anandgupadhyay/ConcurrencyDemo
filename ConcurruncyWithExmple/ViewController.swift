@@ -125,6 +125,9 @@ class ViewController: UIViewController {
                 print(name)
             }
         }
+        if handle.isCancelled{
+            print("Task Cancelled")
+        }
     }
     
     func save(names: [String]) async {
@@ -160,10 +163,11 @@ class ViewController: UIViewController {
 //            return collected
 //        }
 //    }
-//    func downloadNames(fromServer name: String) async -> [String] {
-//        let data = "some data to be loaded"
-//        return Array(arrayLiteral: data)
-//    }
+    
+    func downloadNames(fromServer name: String) async -> [String] {
+        let data = "some data to be loaded"
+        return Array(arrayLiteral: data)
+    }
 
 }
 
