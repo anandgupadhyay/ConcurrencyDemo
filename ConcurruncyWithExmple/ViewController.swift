@@ -112,7 +112,6 @@ class ViewController: UIViewController {
 //        let namesMain = await downloadNames(fromServer: "main")
 //        let secondary = await downloadNames(fromServer: "secondary")
         //above line gives error - async call in a function that does not support concurrency
-
         
         let handle = Task { // Creates asynchronous task
             let names = await downloadNames(fromServer: "main")
